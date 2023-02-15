@@ -35,10 +35,45 @@ impl Default for Person {
 // If while parsing the age, something goes wrong, then return the default of Person
 // Otherwise, then return an instantiated Person object with the results
 
-// I AM NOT DONE
+
+
+
+use std::num::ParseIntError;
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        
+
+        let default_person: Person = Person::default();
+        let s_vec: Vec<&str> = s.split(",").collect();
+
+
+
+        if s.len() == 0 || s_vec.len() != 2{
+            return default_person;
+        }
+
+        let checked_age: Result<usize, ParseIntError> = match s_vec[1].parse::<usize>(){
+            Ok(i) => Ok(i),
+            Err(_) => return default_person
+        };
+
+        if s_vec[0] == "" || s_vec[1] == ""{
+            return default_person;
+        };
+
+
+
+        let _name: String = s_vec[0].to_string();
+        let _age: usize = checked_age.unwrap();
+
+        let new_person: Person = Person {
+            name: _name,
+            age: _age
+        };
+
+        new_person
+         
     }
 }
 
