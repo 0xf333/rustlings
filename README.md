@@ -1,13 +1,15 @@
-# rustlings 🦀❤️
+# Completed rustlings lessons 🦀❤️
 
-Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
+This repos is to help new comers in Rust whenever they are stuck in any specific exercise of the the rustlings lessons. 
 
-_...looking for the old, web-based version of Rustlings? Try [here](https://github.com/rust-lang/rustlings/tree/rustlings-1)_
+## How to use it
+Only use it when you've tried at least multiple times to solve any particular rustling lesson but keep failing! 
+This solved exercises will give you some guidance on how you should approach the problem you are trying to solve.
 
-Alternatively, for a first-time Rust learner, there are several other resources:
+Check the `exercises` directory for all solved lessons.
+If you want to run them to make sure that all of them are working, follow the steps detailed below.
 
-- [The Book](https://doc.rust-lang.org/book/index.html) - The most comprehensive resource for learning Rust, but a bit theoretical sometimes. You will be using this along with Rustlings!
-- [Rust By Example](https://doc.rust-lang.org/rust-by-example/index.html) - Learn Rust by solving little exercises! It's almost like `rustlings`, but online
+---
 
 ## Getting Started
 
